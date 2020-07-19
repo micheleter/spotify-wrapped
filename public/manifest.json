@@ -1,13 +1,16 @@
+
 {
-	"name": "Spotify Wrapped",
-	"version": "1.0.0",
-	"manifest_version": 2,
-	"description": "Find out who your favorite artist over hte past few years has been!",
-	"icons": {
-		"512": "logo512.png"
-	},
-	"browser_action": {
-		"default_icon": "logo512.png",
-		"default_popup": "popup.html"
-	}
+  "manifest_version": 2,
+  "name": "Spotify Wrapped",
+  "description": "Find out who your favorite artist is - and more!",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "192": "logo192.png"
+  },
+  "permissions": [
+  ]
 }
