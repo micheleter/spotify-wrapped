@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { SpotifyLogin } from "./components/spotify-login";
+
+let clientId = "12c525e678244bbb9286a166bcb97c57";
+let redirectUri = "https://www.spotify.com/";
+
+function onSuccess() {
+    console.log("Success");
+}
+
+function onFailure() {
+    console.log("Error");
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return <SpotifyLogin />;
 }
 
 export default App;
